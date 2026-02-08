@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/novincode/motionkit-repo/releases/latest"><img src="https://img.shields.io/badge/version-1.2.0-blue?style=flat-square" alt="Version" /></a>
+  <a href="https://github.com/novincode/motionkit/releases/latest"><img src="https://img.shields.io/badge/version-1.2.0-blue?style=flat-square" alt="Version" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-proprietary-orange?style=flat-square" alt="License" /></a>
   <a href="https://github.com/sponsors/novincode"><img src="https://img.shields.io/badge/sponsor-%E2%99%A5-ff69b4?style=flat-square" alt="Sponsor" /></a>
 </p>
@@ -67,7 +67,7 @@ Save and load animations as MotionKit files. Share animation data between Figma 
 3. Open any Figma file → **Plugins → MotionKit**
 
 ### Manual Installation (Development)
-1. Download the latest release from [Releases](https://github.com/novincode/motionkit-repo/releases)
+1. Download the latest release from [Releases](https://github.com/novincode/motionkit/releases)
 2. Extract the ZIP
 3. In Figma Desktop: **Plugins → Development → Import plugin from manifest**
 4. Select the `manifest.json` from the extracted folder
@@ -111,7 +111,7 @@ Can't donate? Sharing MotionKit with a friend or leaving a review on the Figma C
 ## Feedback & Issues
 
 Found a bug? Have a feature idea?  
-[Open an issue](https://github.com/novincode/motionkit-repo/issues) or email [ideyenovin@gmail.com](mailto:ideyenovin@gmail.com).
+[Open an issue](https://github.com/novincode/motionkit/issues) or email [ideyenovin@gmail.com](mailto:ideyenovin@gmail.com).
 
 ---
 
