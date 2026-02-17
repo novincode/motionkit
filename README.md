@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/novincode/motionkit/releases/latest"><img src="https://img.shields.io/badge/version-1.2.0-blue?style=flat-square" alt="Version" /></a>
+  <a href="https://github.com/novincode/motionkit/releases/latest"><img src="https://img.shields.io/badge/version-2.2.0-blue?style=flat-square" alt="Version" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-proprietary-orange?style=flat-square" alt="License" /></a>
   <a href="https://github.com/sponsors/novincode"><img src="https://img.shields.io/badge/sponsor-%E2%99%A5-ff69b4?style=flat-square" alt="Sponsor" /></a>
 </p>
@@ -36,10 +36,18 @@ No subscriptions. No paywalls. Just animation.
 ### 🎬 Timeline Animation
 Professional keyframe timeline inspired by Blender and After Effects. Drag keyframes with snapping, visual easing curves, and work area markers. Animate 17+ properties — position, scale, rotation, opacity, blur, shadows, corner radius, stroke, fill, and more.
 
+**Modifiers**: Apply stroke trim, follow path animations, and per-layer loop modes (once, loop, ping-pong) without keyframes.
+
+**Clips**: Organize timeline animations as draggable clips with independent settings. Extend, trim, and batch-move clips.
+
 **Recording Mode**: Move elements in Figma and keyframes appear automatically at the playhead. No menus, no clicking — just animate.
 
 ### 🎞️ Frame-by-Frame
 Classic cel animation workflow with onion skinning. Create clips, scrub frames, and reference previous frames as translucent overlays. Independent frame rates and per-frame timing.
+
+**Layers Panel**: Drag-sort FBF frames alongside detached layers (persistent non-animated elements). Unified context menus, inline rename (F2), and smart grouping.
+
+**Detached Layers**: Mark frames as continuous layers that stay visible across the animation — perfect for backgrounds, UI chrome, or persistent elements.
 
 ### 🔀 Nested Animations
 Timeline inside frame-by-frame. Frame-by-frame inside timeline. Each runs at its own FPS, rendered and composited correctly. This unlocks complex animation possibilities that weren't possible before.
@@ -61,6 +69,7 @@ Fully customizable shortcuts with Blender-inspired defaults. Select keyframes an
 - **Preset Library**: Save and reuse animations, use built-in defaults
 - **Snapping Tools**: Customizable snapping for precise keyframe placement
 - **Import/Export Timelines**: Share animation data between files and teammates
+- **Help & Lessons**: In-app help dialog with searchable docs and online community tutorials loaded from GitHub
 
 ---
 
