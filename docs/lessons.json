@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "updatedAt": "2026-02-17",
+  "lessons": [
+    {
+      "id": "guide-keyframes",
+      "title": "Mastering Keyframes",
+      "summary": "Deep dive into creating, editing, and managing keyframes.",
+      "mode": "timeline",
+      "icon": "keyframe",
+      "steps": [
+        {
+          "title": "What are Keyframes?",
+          "body": "Keyframes are the foundation of animation in MotionKit. A keyframe captures the state of a property (position, rotation, opacity, scale) at a specific point in time.\n\nMotionKit interpolates between keyframes to create smooth animations automatically."
+        },
+        {
+          "title": "Adding Keyframes",
+          "body": "There are two ways to add keyframes:\n\n- **Record Mode** — Click the red Record button, then change any property in Figma. MotionKit captures the change at the current playhead position.\n- **Manual** — Right-click a layer row in the timeline and choose **Add Keyframe** to insert one at the playhead."
+        },
+        {
+          "title": "Editing Keyframes",
+          "body": "Click a keyframe diamond to select it. You can:\n\n- **Drag** it left/right to change its time\n- **Shift+Click** to multi-select\n- **Right-click** for options like Delete, Copy, Paste\n- Use the **Curves** panel to edit its easing\n\nSelected keyframes appear highlighted in blue."
+        },
+        {
+          "title": "Discrete vs Smooth",
+          "body": "By default keyframes interpolate smoothly. You can switch to **discrete** (step) interpolation for instant value changes — perfect for sprite-like toggling or visibility switches.\n\nRight-click a keyframe and choose **Toggle Discrete** to switch modes."
+        }
+      ]
+    },
+    {
+      "id": "guide-modifiers",
+      "title": "Using Modifiers",
+      "summary": "Loop, follow path, stroke trim — learn all modifier types.",
+      "mode": "timeline",
+      "icon": "modifier",
+      "steps": [
+        {
+          "title": "What are Modifiers?",
+          "body": "Modifiers are effects that transform how an animation plays. They don't change your keyframes — they modify the output.\n\nOpen the **Modifiers** panel (wrench icon) in the sidebar to manage modifiers for the selected layer."
+        },
+        {
+          "title": "Loop Modifier",
+          "body": "The **Loop** modifier repeats the animation. Options:\n\n- **Loop** — repeats endlessly\n- **Ping-Pong** — plays forward then backward\n- **Count** — set a specific number of repetitions\n\nGreat for loading spinners, breathing effects, and idle animations."
+        },
+        {
+          "title": "Follow Path",
+          "body": "The **Follow Path** modifier animates a layer along a vector path.\n\n1. Select the layer to animate\n2. Add a Follow Path modifier\n3. Pick a vector path layer as the guide\n\nThe layer will travel along the path over the animation duration. You can control alignment, offset, and rotation behavior."
+        },
+        {
+          "title": "Stroke Trim",
+          "body": "The **Stroke Trim** modifier progressively reveals or hides a vector stroke.\n\nPerfect for handwriting effects, line-draw animations, and path reveals.\n\n- **Start/End** — control which portion of the stroke is visible\n- **Offset** — shift the visible portion\n- Works with any vector layer that has a stroke"
+        }
+      ]
+    },
+    {
+      "id": "guide-easing",
+      "title": "Easing & Curves",
+      "summary": "Master bezier curves and easing presets for natural motion.",
+      "mode": "timeline",
+      "icon": "curves",
+      "steps": [
+        {
+          "title": "Why Easing Matters",
+          "body": "Linear animations feel mechanical and robotic. **Easing** adds acceleration and deceleration to make motion feel natural.\n\nEvery keyframe transition has a bezier curve that controls its timing. The default is `ease-in-out` which starts slow, speeds up, then slows down."
+        },
+        {
+          "title": "The Curve Editor",
+          "body": "Select a keyframe, then open the **Curves** panel in the sidebar.\n\nThe bezier editor shows a graph where:\n- **X axis** = time (left to right)\n- **Y axis** = progress (bottom to top)\n\nDrag the two control points to shape the curve. The preview updates in real-time."
+        },
+        {
+          "title": "Easing Presets",
+          "body": "Click **Show Presets** in the Curves panel to access built-in easings:\n\n- **Ease In** — starts slow, ends fast (for exits)\n- **Ease Out** — starts fast, ends slow (for entrances)\n- **Ease In-Out** — smooth both ends\n- **Spring** — overshoots then settles\n- **Bounce** — bounces at the end\n\nClick any preset to apply it instantly."
+        }
+      ]
+    },
+    {
+      "id": "guide-export",
+      "title": "Exporting Animations",
+      "summary": "Render your animations as MP4, GIF, WebM, or image sequences.",
+      "mode": "all",
+      "icon": "export",
+      "steps": [
+        {
+          "title": "Render Options",
+          "body": "Click the **Render** button (or press `⌘E`) to open the export dialog.\n\nSupported formats:\n\n- **MP4** — Best quality, smallest file size. Ideal for demos and presentations.\n- **GIF** — Universal support, larger files. Great for documentation and chat.\n- **WebM** — Modern format, great compression. Perfect for web.\n- **PNG Sequence** — Individual frames as PNGs. For post-production workflows."
+        },
+        {
+          "title": "Quality & Performance",
+          "body": "Higher resolutions and frame rates produce larger files but smoother playback.\n\n- **1x** — matches your Figma frame size\n- **2x** — retina quality, 4× file size\n- **FPS** — 24 for cinematic, 30 for standard, 60 for smooth UI\n\nGIFs are limited to 256 colors — use MP4 or WebM for gradients and photos."
+        },
+        {
+          "title": "Work Area Export",
+          "body": "Use the **Work Area** markers (`[` and `]` keys) to define a sub-range of your timeline.\n\nWhen rendering, only the work area portion will be exported. This is useful for:\n\n- Exporting a specific section of a long animation\n- Testing short loops quickly\n- Creating variations from the same timeline"
+        }
+      ]
+    }
+  ]
+}
